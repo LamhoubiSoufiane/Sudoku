@@ -13,8 +13,6 @@ int main()
     auto duration = chrono::duration_cast<std::chrono::milliseconds>(stop - start);
     cout << "Temps d'execution : " << duration.count() << " milliseconds" <<endl;
     monsud.Afficher_Sud();
-    // cout<<"/********************** R E S O U D R E *********************/"<<endl;
-
-   // monsud.Generer_Sudoko();
+    
 
 }

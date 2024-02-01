@@ -114,35 +114,3 @@ bool Sudoko::ArretBoucle(int tab[10])
     }
     return false;
 }
-// bool Sudoko::Res_Aleatoire(int tab[10])
-// {
-//     int ligne,colonne;
-//     int chiffre[9]={1,2,3,4,5,6,7,8,9};
-//     if(!Chercher_Case_Vide(ligne,colonne)) // aucune case n est vide => sudoko resolu
-//         return true;
-//     shuffle(begin(chiffre),end(chiffre),default_random_engine(static_cast<unsigned int>(std::time(0))))
-//     for(int i=1;i<10;i++)
-//     {
-//         if((VerifierCase(ligne,colonne,i)) && (VerifierColonne(colonne,i)) &&
-//             VerifierLigne(ligne,i))
-//             {
-//                 Matrice[ligne][colonne]=i;
-//                 if(Resoudre_Sudoko()) return true;
-//                 Matrice[ligne][colonne]=0;
-//             }
-//     }
-//     return false;
-// }
-
-// void Sudoko::Generer_Sudoko()
-// {
-//     int tab[10];
-//     for(int i=0;i<9;i++)
-//     {
-//         for(int j=0;j<9;j++) Matrice[i][j]=0;
-//     }
-//     cout<<"/**************************************/"<<endl;
-//     this->Afficher_Sud();
-//     cout<<"/**************************************/"<<endl;
-//     Res_Aleatoire(tab);
-// }
